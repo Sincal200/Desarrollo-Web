@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #efefef;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 100px); 
+    max-width: calc(33.33% - 100px); 
+    padding: 10px;
+}
+
+
+.imgProduct{
+    width: 210px;
+    height: 210px;
+}
+
+.card:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+ }
+
+
+.price{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+ 
+ 
+}
+ 
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+ 
+
+@media (max-width: 820px) {
+    .card {
+        flex-basis: 100%; 
+        max-width: 100%; 
+        margin: 20px;
+    }
+
+    .imgProduct{
+        flex-basis: calc(50% - 50px); 
+        max-width: 150px;
+        max-height: 150px;
+
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
